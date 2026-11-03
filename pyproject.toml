@@ -37,13 +37,14 @@ dependencies = [
   "matplotlib",
   "networkx",
   "numpy",
-  "rdkit",
+  "rdkit>=2024",  # matching rdkit pin on conda-forge
 ]
 optional-dependencies.credits = [ "duecredit" ]
 optional-dependencies.graphviz = [ "pygraphviz" ]
 optional-dependencies.test = [
   "codecov",
   "pytest",
+  "pytest-xdist",
 ]
 urls = { Homepage = "https://github.com/OpenFreeEnergy/Lomap" }
 scripts.lomap = "lomap.dbmol:startup"
